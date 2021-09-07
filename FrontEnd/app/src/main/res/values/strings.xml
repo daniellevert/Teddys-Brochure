@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Teddy\'s Brochure</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="title_history">History</string>
+    <string name="review_title">Review Title:</string>
+
+</resources>

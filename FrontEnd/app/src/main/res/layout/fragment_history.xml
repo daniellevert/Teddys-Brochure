@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/history_page">
+
+    <!--
+         SCROLLVIEW FOR THE ENTIRE PAGE
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+            VERTICAL LAYOUT FOR ALL COMPONENTS ON THE PAGE
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+                PARK HISTORY IMAGE COMPONENT
+            -->
+            <ImageView
+                android:id="@+id/parkHistoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                android:background="#CFD8DC"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="0" />
+
+            <!--
+                PARK HISTORY & TEDDY'S FACTS TEXT COMPONENTS
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFD600"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parkHistoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Park History"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/parkHistoryBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Death Valley park history"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@color/black"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="0" />
+
+<!--            Teddy's Facts Bubble-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="#64DD17"-->
+<!--                android:id="@+id/teddysFactsBubble">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/teddysFactTitle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="Teddy's Facts"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:padding="10dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/teddysFactBody"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="Teddy's Facts about the park\n- Fact one\n- Fact two\n- Fact three"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:padding="10dp"/>-->
+<!--            </LinearLayout>-->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

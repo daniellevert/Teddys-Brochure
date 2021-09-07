@@ -1,0 +1,59 @@
+DATABASE SCHEMA PROPOSAL: 
+
+// National park information
+{
+    "Death Valley" : { // keys are unique park names
+
+        "park_id" : 1, // each park gets a unique park id
+        "blurb" : "basic Death Valley things",
+        "location" : [lat, long], // location is a native type in mongobd
+        "map" : "/googlemapsurl",
+        "pics" : [
+                    "/filepath/deathvalleyimg1", 
+                    "/filepath/deathvalleyimg2",
+                  ]
+        "weather" : "/weatherappurl",
+    },
+
+  "Yosemetie" : {
+        "park_id" : 2,
+        "blurb" : "basic Yosemetie things"
+        "location" : [lat, long],
+        "map" : "/googlemapsurl",
+        "pics" : [
+                    "/filepath/yosemetieimg1", 
+                    "/filepath/yosemetieimg2",
+                  ]
+        "weather" : "/weatherappurl",
+    }
+
+}
+
+// Review information
+{
+    1 : {
+        "park_id" : 1, //Death Valley
+        "reviewer" : "John",
+        "title" : "John's Review",
+        "review" : "Death Valley sucks"   
+    },
+    2 : {
+        "park_id : 1, //Death Valley
+        "reviewer" : "Jane",
+        "title" : "Jane's review",
+        "review" : "Death Valley rules"
+    },
+    3 : {
+        "park_id" : 2 // Yosemetie
+        "reviewer" : "John",
+        "title" : "John's second review",
+        "review" : "Yosemetie rules"
+    },
+    4 : {
+        "park_id" : 2 // Yosemitie
+        "reviewer" : "Patrick",
+        "title" : "a list of my favorite foods",
+        "review" : "Mayonaise"
+    }
+}
+

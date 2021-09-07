@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/attractionsActivity2">
+
+    <!--
+         SCROLLVIEW FOR THE ENTIRE PAGE
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+            VERTICAL LAYOUT FOR ALL COMPONENTS ON THE PAGE
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+                PARK HISTORY IMAGE COMPONENT
+            -->
+
+            <ImageView
+                android:id="@+id/imageViewat1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="0" />
+
+            <!--
+                PARK HISTORY & TEDDY'S FACTS TEXT COMPONENTS
+            -->
+
+            <TextView
+                android:id="@+id/viewAttractionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Attraction Title"
+                android:textStyle="bold"
+                android:background="@color/teddy_yellow"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/viewAttractionBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Attraction description"
+                android:background="@color/teddy_yellow"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="0" />
+
+            <!--            <fragment-->
+            <!--                android:id="@+id/fragment"-->
+            <!--                android:name="com.group17.teddysbrochure.ui.reviews.ReviewsFragment"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content" />-->
+
+
+            <!--
+                LAYOUT FOR RECENT REVIEW COMPONENT
+            -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mentioned In"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/roundborder_shape"
+                android:backgroundTint="@color/teddy_yellow"
+                android:padding="10dp"
+                android:layout_margin="10dp">
+
+                <!--
+                    REVIEW TITLE & DATE COMPONENTS
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teddy_yellow"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Review Title:  "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/reviewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Title"
+                        android:textColor="#545454"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teddy_yellow"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From:  "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/reviewer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textColor="#545454" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teddy_yellow"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stars:  "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/reviewStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-1"
+                        android:textColor="#545454"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/teddy_yellow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Review:  "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/reviewText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Review body"
+                        android:textColor="#545454"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/backButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,226 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "National-Park API Documentation",
+    "description": "Documentation For The Teddy's Bro Project"
+  },
+  "host": "localhost:3000",
+  "tags": [
+    {
+      "name": "NationalPark",
+      "description": "Everything About National park"
+    },
+    {
+      "name": "WeatherAPI",
+      "description": "Access Weather API At A Particular National park"
+    },
+    {
+      "name": "Review",
+      "description": "Reviews And Comments On National Park"
+    },
+    {
+      "name": "Download",
+      "description": "Download National Park Information"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/nationalPark": {
+      "get": {
+        "tags": ["NationalPark"],
+        "summary": "Get All National Parks",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": ["NationalPark"],
+        "summary": "Insert National Park",
+        "parameters": [
+        {
+          "name": "National Json Object",
+          "in": "body",
+          "description": "Park Information",
+          "required": true
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      }
+    },
+    "/nationalPark/{id}": {
+      "get": {
+        "tags": ["NationalPark"],
+        "summary": "Get National Park By ID",
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "default": "60263b0b42d1ffd2ec84a6ac"
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": ["NationalPark"],
+        "summary": "Update National Park",
+        "parameters": [
+        {
+          "name": "National Json Object",
+          "in": "body",
+          "description": "Park To Update",
+          "required": true
+        }, {
+          "name": "id",
+          "in": "path",
+          "description": "Park's ID",
+          "required": true,
+          "default": "60263b0b42d1ffd2ec84a6ac"
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      }
+    },
+    "/nationalPark/{parkName}": {
+      "get": {
+        "tags": ["NationalPark"],
+        "summary": "Get National Park By Name",
+        "parameters": [
+        {
+          "name": "parkName",
+          "in": "path",
+          "required": true,
+          "default": "DeathValley"
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      }
+    },
+    "/weather": {
+      "get": {
+        "tags": ["WeatherAPI"],
+        "summary": "Get Up To Date Weather Detail At Park By ID",
+        "parameters": [
+        {
+          "name": "lat",
+          "in": "query",
+          "required": true,
+          "default": "41.962387"
+        }, {
+          "name": "long",
+          "in": "query",
+          "required": true,
+          "default": "-87.720460"
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      }
+    },
+    "/download/{id}": {
+      "get": {
+        "tags": ["Download"],
+        "summary": "Download Datas At Park By ID",
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      }
+    },
+    "/review/{id}": {
+      "get": {
+        "tags": ["Review"],
+        "summary": "Search for parks review by park id",
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "default": "60263b0b42d1ffd2ec84a6ac"
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Review"],
+        "summary": "Review Park With Comments And Stars",
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "default": "60263b0b42d1ffd2ec84a6ac"
+        },
+        {
+          "name": "message",
+          "in": "body",
+          "required": true
+        }],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Parks Not Found"
+          }
+        }
+      }
+    }
+  }
+}

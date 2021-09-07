@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/explore_page">
+
+    <!--
+         SCROLLVIEW FOR THE ENTIRE PAGE
+    -->
+    <ScrollView
+        android:id="@+id/AttractionButton1Active"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+                VERTICAL LAYOUT FOR ALL COMPONENTS ON THE PAGE
+            -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--
+                    VERTICAL LAYOUT FOR ATTRACTION BUTTON COMPONENTS
+                -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!--
+                        ATTRACTION 1 BUTTON COMPONENT
+                    -->
+                <FrameLayout
+                    android:id="@+id/attractionButton1"
+                    android:layout_width="@dimen/box_size"
+                    android:layout_height="@dimen/box_size"
+                    android:background="@drawable/roundborder_shape"
+                    android:padding="10dp"
+                    android:backgroundTint="@color/teddy_darkgray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/attractionTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Attraction 1"
+                            android:textStyle="bold"
+                            android:paddingBottom="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/attractionImage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />
+
+                <!--
+                        ATTRACTION 2 BUTTON COMPONENT
+                    -->
+
+                <FrameLayout
+                    android:id="@+id/attractionButton2"
+                    android:layout_width="@dimen/box_size"
+                    android:layout_height="@dimen/box_size"
+                    android:background="@drawable/roundborder_shape"
+                    android:padding="10dp"
+                    android:backgroundTint="@color/teddy_darkgray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/attractionTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Attraction 2"
+                            android:textStyle="bold"
+                            android:paddingBottom="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/attractionImage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="0" />
+
+            <!--
+                     PARK OVERVIEW COMPONENT
+                -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/teddy_yellow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parkOverviewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Park Overview"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkOverviewBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoSizeTextType="uniform"
+                    android:padding="10dp"
+                    android:text="Death Valley park overview"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="0" />
+
+            <!--
+                     VIEW TRAIL MAPS & DOWNLOAD TRAIL MAPS BUTTONS COMPONENT
+                -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <!--
+                        VIEW TRAIL MAPS BUTTON
+                    -->
+                <Button
+                    android:id="@+id/viewTrailMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CFD8DC"
+                    android:drawableLeft="@drawable/ic_baseline_preview_24"
+                    android:text="Trail Maps"
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />
+
+                <!--
+                        VIEW TRAIL MAPS BUTTON
+                    -->
+                <Button
+                    android:id="@+id/downloadTrailMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CFD8DC"
+                    android:drawableLeft="@drawable/ic_baseline_file_download_24"
+                    android:text="Trail Maps"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
