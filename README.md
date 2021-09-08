@@ -1,20 +1,20 @@
 # Teddy's Brochure
 
-Description: 
+**Description:**
 A travel guide Android app for United States national parks.
 
-Tech Stack: 
+**Tech Stack:** 
 Java, XML, Node.js
 
-Additional technologies: 
+**Additional technologies:**
 Linode server, MongoDB, Android Studio
 
-Original idea and development document by: 
+**Original idea and development document by:** 
 Cecilia Avila, Eugenio Perez, Kaveesha Weerasiri, Adrian Zavala.
 
-Implemented and customized by: Daniel LeVert, Adam Sammakia, Tru Nguyen.
+**Implemented and customized by:** Daniel LeVert, Adam Sammakia, Tru Nguyen.
 
-Daniel's contribution: 
+**Daniel's contribution:**
 Worked on an agile team to contribute the frontend UI mockups and implementation as well as functionality for this national park, travel guide Android app that works for any parks in a database
 
 ### Design
