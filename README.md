@@ -11,6 +11,7 @@ Linode server, MongoDB, Android Studio
 
 Original idea and development document by: 
 Cecilia Avila, Eugenio Perez, Kaveesha Weerasiri, Adrian Zavala.
+
 Implemented and customized by: Daniel LeVert, Adam Sammakia, Tru Nguyen.
 
 Daniel's contribution: 
