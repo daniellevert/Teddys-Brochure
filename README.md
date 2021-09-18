@@ -1,5 +1,7 @@
 # Teddy's Brochure
 
+![unnamed](https://user-images.githubusercontent.com/47677702/133868039-52c31e04-8a36-41d8-acee-cef6c494ed50.png)
+
 **Description:**
 A travel guide Android app for United States national parks.
 
