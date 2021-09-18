@@ -15,7 +15,7 @@ Cecilia Avila, Eugenio Perez, Kaveesha Weerasiri, Adrian Zavala.
 **Implemented and customized by:** Daniel LeVert, Adam Sammakia, Tru Nguyen.
 
 **Daniel's contribution:**
-Worked on an agile team to contribute the frontend UI mockups and implementation as well as functionality for this national park, travel guide Android app that works for any parks in a database
+Worked on an agile team to contribute the frontend UI mockups and implementation in XML as well as functionality in Java for this national park, travel guide Android app that works for any parks in a database
 
 ### Design
 Mockups by: Daniel LeVert
