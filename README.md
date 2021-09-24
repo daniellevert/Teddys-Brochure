@@ -3,7 +3,7 @@
 ![unnamed](https://user-images.githubusercontent.com/47677702/133868039-52c31e04-8a36-41d8-acee-cef6c494ed50.png)
 
 **Description:**
-A travel guide Android app for United States national parks.
+A travel guide Android app for United States national parks that works for any number of parks in a database.
 
 **Tech Stack:** 
 Java, XML, Node.js
@@ -14,10 +14,11 @@ Linode server, MongoDB, Android Studio
 **Original idea and development document by:** 
 Cecilia Avila, Eugenio Perez, Kaveesha Weerasiri, Adrian Zavala.
 
-**Implemented and customized by:** Daniel LeVert, Adam Sammakia, Tru Nguyen.
+**Customized and coded by:** 
+Daniel LeVert, Adam Sammakia, Tru Nguyen.
 
 **Daniel's contribution:**
-Worked on an agile team to contribute the frontend UI mockups and implementation in XML as well as functionality in Java for this national park, travel guide Android app that works for any parks in a database
+Worked on an agile team to contribute the frontend UI mockups and implementation in XML as well as frontend functionality in Java
 
 ### Design
 Mockups by: Daniel LeVert
